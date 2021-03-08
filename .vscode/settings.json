@@ -3,9 +3,11 @@
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
+
   "[markdown]": {
     "editor.quickSuggestions": true
   },
+
   "files.defaultLanguage": "markdown",
   "files.exclude": {
     "**/node_modules": true
@@ -13,17 +15,29 @@
   "files.watcherExclude": {
     "**/node_modules": true
   },
+
+  "markdown.styles": [".vscode/github-style.css"],
+  
   "foam.edit.linkReferenceDefinitions": "withExtensions",
-  "foam.openDailyNote.directory": "journal",
-  "foam.openDailyNote.titleFormat": "fullDate",
+  "foam.orphans.exclude": ["notes"],
+
   "git.enableSmartCommit": true,
   "git.postCommitCommand": "sync",
   "markdown.preview.breaks": true,
-  "pasteImage.path": "${projectRoot}/attachments",
-  "pasteImage.showFilePathConfirmInputBox": true,
   "prettier.singleQuote": false,
-  "spellright.notificationClass": "warning",
+
   "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
   "vscodeMarkdownNotes.slugifyMethod": "github-slugger",
-  "window.autoDetectColorScheme": true,
+
+  // 笔记配置
+  "foam.openDailyNote.directory": "notes",
+  "foam.openDailyNote.filenameFormat": "'每日笔记'-yyyy-mm-dd",
+  "foam.openDailyNote.fileExtension": "md",
+  "foam.openDailyNote.titleFormat": "'每日笔记'-yyyy-mm-dd",
+
+  // 图片黏贴
+  "pasteImage.path": "${projectRoot}/images",
+  "pasteImage.encodePath": "urlEncode",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "pasteImage.filePathConfirmInputBoxMode": "onlyName",
 }
